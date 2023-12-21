@@ -1,0 +1,219 @@
+.hero {
+  height: 100vh;
+  width: 100vw;
+}
+.logo {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 20em;
+  object-fit: contain;
+  height: 3em;
+  filter: drop-shadow(2px 4px 6px black);
+  margin: 0 0 0 1em;
+}
+.hero-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  align-items: center;
+}
+.hero-left-content > span {
+  line-height: 4em;
+}
+.hero-right-content {
+  position: relative;
+}
+.hero-header {
+  color: #fdd67b;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hero-subtitle {
+  text-transform: uppercase;
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: invert(0.2);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  z-index: -1;
+}
+.hero1-image {
+  width: 50vw;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+  filter: blur(1.4px);
+  -webkit-filter: blur(1.4px);
+}
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.donationBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  top: 35%;
+  right: 15%;
+}
+.counter {
+  animation: countUp 1s ease-in-out;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 25em;
+  height: 15em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  flex-direction: column;
+  padding: 1em;
+}
+.numberCont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 6em;
+}
+.totals {
+  width: 30%;
+  height: fit-content;
+  border-bottom: 1px solid black;
+  position: relative;
+  top: 20px;
+  right: 15px;
+}
+.totals > p {
+  font-size: 5em;
+  margin: 0;
+  align-self: self-start;
+}
+.line {
+  font-weight: lighter;
+  color: black;
+}
+.iconCont > img {
+  width: 9em;
+  height: 9em;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  bottom: 30px;
+}
+.counterTxt {
+  align-self: baseline;
+  border-top: 1px solid black;
+  font-size: 1.8em;
+  font-weight: lighter;
+  white-space: nowrap;
+}
+/* CSS */
+.button-55 {
+  color: white;
+  align-self: center;
+  background-color: transparent;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
