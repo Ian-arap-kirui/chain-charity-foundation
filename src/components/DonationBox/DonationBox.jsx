@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../sections/Hero/hero.css";
 import BookIcon from "../../assets/book-icon.png";
+import ProgressBar from "../ProgressBar/ProgressBar";
 
 const DonationBox = () => {
   const [totalBooksDonated, setTotalBooksDonated] = useState(20);
@@ -24,6 +25,7 @@ const DonationBox = () => {
             <img src={BookIcon} alt="book icon" loading="lazy" />
           </div>
         </div>
+        <ProgressBar />
       </div>
     </div>
   );

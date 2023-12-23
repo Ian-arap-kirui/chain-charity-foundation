@@ -82,7 +82,7 @@
 }
 .counter {
   animation: countUp 1s ease-in-out;
-  background: rgba(255, 255, 255, 0.2);
+  background: antiquewhite;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8px);
@@ -216,4 +216,146 @@
 .button-89:active {
   background: var(--color);
   color: #fff;
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .logo {
+    width: 88%;
+    height: 2em;
+    margin: 0;
+    align-self: center;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-left-content {
+    width: 100%;
+    padding: 10em 0 0 0;
+    height: 50vh;
+    text-align: center;
+  }
+  .hero-header {
+    font-size: 3em;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero1-image {
+    width: 100%;
+    height: 50vh;
+    filter: none;
+  }
+  .hero-right-content {
+    position: static;
+    margin-top: 2em;
+  }
+  .donationBox {
+    right: auto;
+    width: 100%;
+    top: 57%;
+    flex-direction: column-reverse;
+  }
+  .donationBox > span {
+    filter: drop-shadow(2px 4px 6px black);
+  }
+  .counter {
+    width: 80%;
+    height: auto;
+  }
+  .numberCont {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .totals {
+    width: 100%;
+    right: initial;
+    top: initial;
+    position: static;
+    margin-top: 1em;
+  }
+  .totals > p {
+    font-size: 2.5em;
+  }
+  .iconCont > img {
+    width: 6em;
+    height: 6em;
+    bottom: 0;
+  }
+  .counterTxt {
+    align-self: center;
+    font-size: 1.2em;
+  }
+  .button-55 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    height: auto;
+  }
+  .logo {
+    width: 15em;
+    height: 2em;
+    margin: 0;
+  }
+  .hero-container {
+    flex-direction: column;
+  }
+  .hero-left-content {
+    height: 40vh;
+    padding: 5em 0;
+    text-align: center;
+  }
+  .hero-header {
+    font-size: 4em;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero1-image {
+    width: 100%;
+    height: 50vh;
+    filter: none;
+  }
+  .hero-right-content {
+    position: static;
+    margin-top: 2em;
+  }
+  .donationBox {
+    top: initial;
+    right: initial;
+    position: static;
+    margin-top: 2em;
+  }
+  .counter {
+    width: 100%;
+    height: auto;
+  }
+  .numberCont {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .totals {
+    width: 100%;
+    right: initial;
+    top: initial;
+    position: static;
+    margin-top: 1em;
+  }
+  .iconCont > img {
+    width: 6em;
+    height: 6em;
+    bottom: 0;
+  }
+  .counterTxt {
+    align-self: center;
+    font-size: 1.2em;
+  }
+  .button-55 {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
 }
