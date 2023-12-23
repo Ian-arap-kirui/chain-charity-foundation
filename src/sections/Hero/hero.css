@@ -252,11 +252,12 @@
   .donationBox {
     right: auto;
     width: 100%;
-    top: 57%;
+    top: 60%;
     flex-direction: column-reverse;
   }
   .donationBox > span {
     filter: drop-shadow(2px 4px 6px black);
+    font-size: 12px;
   }
   .counter {
     width: 80%;
