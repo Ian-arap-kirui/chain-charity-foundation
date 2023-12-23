@@ -294,19 +294,22 @@
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   .hero {
-    height: auto;
+    height: 100vh;
   }
   .logo {
-    width: 15em;
-    height: 2em;
+    width: 16em;
+    height: 3em;
     margin: 0;
+    position: relative;
   }
   .hero-container {
     flex-direction: column;
+    height: auto;
   }
   .hero-left-content {
+    width: 100vw;
     height: 40vh;
-    padding: 5em 0;
+    padding: 2em 0;
     text-align: center;
   }
   .hero-header {
@@ -325,17 +328,19 @@
     margin-top: 2em;
   }
   .donationBox {
+    position: absolute;
+    flex-direction: column-reverse;
     top: initial;
-    right: initial;
-    position: static;
+    bottom: 0;
+    right: 30%;
     margin-top: 2em;
   }
   .counter {
     width: 100%;
-    height: auto;
+    height: 12em;
   }
   .numberCont {
-    flex-direction: column;
+    flex-direction: row;
     gap: 2em;
   }
   .totals {
@@ -344,6 +349,9 @@
     top: initial;
     position: static;
     margin-top: 1em;
+  }
+  .totals > p {
+    font-size: 3em;
   }
   .iconCont > img {
     width: 6em;
