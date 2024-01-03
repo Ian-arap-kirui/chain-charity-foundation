@@ -17,7 +17,10 @@ const DonationBox = () => {
       <div className="counter">
         {" "}
         <div className="top">
-          <p className="counterTitle">Book Donation Drive</p>
+          <p className="counterTitle">
+            Book Donation <br />
+            Drive
+          </p>
           <div className="innerTop">
             <div className="numCont">
               <p className="counterSub1">Raised </p>
@@ -37,13 +40,10 @@ const DonationBox = () => {
           {" "}
           <ProgressBar />
         </div>
-        <p className="donationSummary">1234 Books Donated of 1234 goal</p>
-        <div className="donationBtn">
-          {" "}
-          <a href="tel:0742311256" className="donationBtn">
-            Donate
-          </a>
-        </div>
+        <p className="donationSummary">1234 Books Donated of 1234 goal</p>{" "}
+        <a href="tel:0742311256" className="donationBtn">
+          Donate
+        </a>
       </div>
     </div>
   );

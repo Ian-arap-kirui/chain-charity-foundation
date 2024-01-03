@@ -72,7 +72,7 @@
 }
 .donationBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 1em;
@@ -90,12 +90,48 @@
   /* -webkit-backdrop-filter: blur(8px); */
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 25em;
-  height: 15em;
+  height: 18em;
   display: flex;
   justify-content: center;
   color: black;
   flex-direction: column;
   padding: 1em;
+}
+.counterTitle {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 25px;
+}
+.innerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 15px;
+}
+.numCont > p {
+  color: #667085;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.numCont > span {
+  color: #2e4049;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 600;
+}
+.donationSummary {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.donationBtn {
+  border-radius: 34px;
+  border: 1px solid #0d385a;
+  background: #2e4049;
+  padding: 15px;
 }
 .numberCont {
   display: flex;
@@ -104,6 +140,9 @@
   height: 100%;
   align-items: center;
   gap: 6em;
+}
+.counterSub1 {
+  margin: 0;
 }
 .totals {
   width: 30%;
@@ -345,6 +384,11 @@
     margin: 15px 0;
   }
 }
+@media (min-width: 426px) and (max-width: 768px) {
+  .counter {
+    width: 60%;
+  }
+}
 
 /* Tablet Styles */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -352,47 +396,54 @@
     height: 100vh;
   }
   .logo {
-    width: 16em;
+    width: 25em;
     height: 3em;
     margin: 0;
     position: relative;
+    left: -18em;
   }
   .hero-container {
-    flex-direction: column;
-    height: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
   }
   .hero-left-content {
-    width: 100vw;
+    width: 50vw;
     height: 40vh;
-    padding: 2em 0;
+    padding: 30vh 0 0;
     text-align: center;
   }
   .hero-header {
-    font-size: 4em;
+    font-size: 3em;
   }
   .hero-image {
     display: none;
   }
   .hero1-image {
-    width: 100%;
-    height: 50vh;
+    height: 100vh;
     filter: none;
   }
   .hero-right-content {
     position: static;
-    margin-top: 2em;
   }
   .donationBox {
     position: absolute;
     flex-direction: column-reverse;
     top: initial;
-    bottom: 0;
-    right: 30%;
+    bottom: 12em;
+    right: 5%;
     margin-top: 2em;
   }
   .counter {
     width: 100%;
-    height: 12em;
+    height: 18em;
+  }
+  .counterTitle {
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0 0 20px;
   }
   .numberCont {
     flex-direction: row;
