@@ -16,16 +16,34 @@ const DonationBox = () => {
       </span>
       <div className="counter">
         {" "}
-        <div className="numberCont">
-          <div className="totals">
-            <p>{totalBooksDonated + "+"} </p>
-            <span className="counterTxt">Books Donated</span>
-          </div>
-          <div className="iconCont">
-            <img src={BookIcon} alt="book icon" loading="lazy" />
+        <div className="top">
+          <p className="counterTitle">Book Donation Drive</p>
+          <div className="innerTop">
+            <div className="numCont">
+              <p className="counterSub1">Raised </p>
+              <span>{totalBooksDonated}</span>
+            </div>
+            <div className="numCont">
+              <p className="counterSub1">Donations </p>
+              <span>{totalBooksDonated}</span>
+            </div>
+            <div className="numCont">
+              <p className="counterSub1">Goal </p>
+              <span>1234</span>
+            </div>
           </div>
         </div>
-        <ProgressBar />
+        <div className="mid">
+          {" "}
+          <ProgressBar />
+        </div>
+        <p className="donationSummary">1234 Books Donated of 1234 goal</p>
+        <div className="donationBtn">
+          {" "}
+          <a href="tel:0742311256" className="donationBtn">
+            Donate
+          </a>
+        </div>
       </div>
     </div>
   );
