@@ -31,7 +31,7 @@ const Progress = styled.div`
   justify-content: flex-end;
 `;
 
-const ProgressBar = () => {
+const ProgressBar = ({ percentage }) => {
   const [percent, setPercent] = useState(60);
 
   //   useEffect(() => {
@@ -50,9 +50,9 @@ const ProgressBar = () => {
   return (
     <>
       <Wrapper data-testid="wrapper">
-        <Progress percent={percent} data-testid="progress">
+        <Progress percent={percentage} data-testid="progress">
           {" "}
-          {percent}%
+          {percentage}%
         </Progress>
       </Wrapper>
     </>
